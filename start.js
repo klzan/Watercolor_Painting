@@ -30,6 +30,10 @@
      
     previousPoint = currentPoint;
   } 
+  function onMouseEnter({ pageX, pageY}) { 
+      previousPoint.x = pageX; 
+      previousPoint.y = pageY;
+  }
   function run() {
   }
   run();
